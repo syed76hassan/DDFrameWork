@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
     <line>
       <![CDATA[abcd 1234.0]]>
@@ -7,28 +7,46 @@
     <line>
       <![CDATA[testvalidlogin is passed ]]>
     </line>
+    <line>
+      <![CDATA[abcd 1234.0]]>
+    </line>
+    <line>
+      <![CDATA[testvalidlogin is passed ]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9206" started-at="2020-05-20T01:13:43Z" finished-at="2020-05-20T01:13:52Z">
+  <suite name="Suite" duration-ms="24679" started-at="2020-05-21T06:08:19Z" finished-at="2020-05-21T06:08:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9206" started-at="2020-05-20T01:13:43Z" finished-at="2020-05-20T01:13:52Z">
+    <test name="Test on chrome" duration-ms="15438" started-at="2020-05-21T06:08:19Z" finished-at="2020-05-21T06:08:34Z">
       <class name="Script.Validlogin">
-        <test-method status="PASS" signature="OpenApp()[pri:0, instance:Script.Validlogin@4883b407]" name="OpenApp" is-config="true" duration-ms="5070" started-at="2020-05-20T01:13:43Z" finished-at="2020-05-20T01:13:48Z">
+        <test-method status="PASS" signature="OpenApp(java.lang.String, java.lang.String)[pri:0, instance:Script.Validlogin@6eebc39e]" name="OpenApp" is-config="true" duration-ms="7762" started-at="2020-05-21T06:08:19Z" finished-at="2020-05-21T06:08:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[192.168.43.246]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApp -->
-        <test-method status="PASS" signature="testvalidlogin()[pri:0, instance:Script.Validlogin@4883b407]" name="testvalidlogin" duration-ms="3868" started-at="2020-05-20T01:13:48Z" finished-at="2020-05-20T01:13:52Z">
+        <test-method status="PASS" signature="testvalidlogin()[pri:0, instance:Script.Validlogin@6eebc39e]" name="testvalidlogin" duration-ms="5108" started-at="2020-05-21T06:08:27Z" finished-at="2020-05-21T06:08:32Z">
           <reporter-output>
             <line>
               <![CDATA[abcd 1234.0]]>
             </line>
           </reporter-output>
         </test-method> <!-- testvalidlogin -->
-        <test-method status="PASS" signature="CloseApp(org.testng.ITestResult)[pri:0, instance:Script.Validlogin@4883b407]" name="CloseApp" is-config="true" duration-ms="245" started-at="2020-05-20T01:13:52Z" finished-at="2020-05-20T01:13:52Z">
+        <test-method status="PASS" signature="CloseApp(org.testng.ITestResult)[pri:0, instance:Script.Validlogin@6eebc39e]" name="CloseApp" is-config="true" duration-ms="2540" started-at="2020-05-21T06:08:32Z" finished-at="2020-05-21T06:08:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testvalidlogin status=SUCCESS method=Validlogin.testvalidlogin()[pri:0, instance:Script.Validlogin@4883b407] output=abcd 1234.0]]]>
+                <![CDATA[[TestResult name=testvalidlogin status=SUCCESS method=Validlogin.testvalidlogin()[pri:0, instance:Script.Validlogin@6eebc39e] output=abcd 1234.0]]]>
               </value>
             </param>
           </params>
@@ -39,6 +57,47 @@
           </reporter-output>
         </test-method> <!-- CloseApp -->
       </class> <!-- Script.Validlogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test on chrome -->
+    <test name="Test on firefox" duration-ms="24679" started-at="2020-05-21T06:08:19Z" finished-at="2020-05-21T06:08:44Z">
+      <class name="Script.Validlogin">
+        <test-method status="PASS" signature="OpenApp(java.lang.String, java.lang.String)[pri:0, instance:Script.Validlogin@6e1567f1]" name="OpenApp" is-config="true" duration-ms="17605" started-at="2020-05-21T06:08:19Z" finished-at="2020-05-21T06:08:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[192.168.43.246]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenApp -->
+        <test-method status="PASS" signature="testvalidlogin()[pri:0, instance:Script.Validlogin@6e1567f1]" name="testvalidlogin" duration-ms="3155" started-at="2020-05-21T06:08:37Z" finished-at="2020-05-21T06:08:40Z">
+          <reporter-output>
+            <line>
+              <![CDATA[abcd 1234.0]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testvalidlogin -->
+        <test-method status="PASS" signature="CloseApp(org.testng.ITestResult)[pri:0, instance:Script.Validlogin@6e1567f1]" name="CloseApp" is-config="true" duration-ms="3894" started-at="2020-05-21T06:08:40Z" finished-at="2020-05-21T06:08:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testvalidlogin status=SUCCESS method=Validlogin.testvalidlogin()[pri:0, instance:Script.Validlogin@6e1567f1] output=abcd 1234.0]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[testvalidlogin is passed ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- CloseApp -->
+      </class> <!-- Script.Validlogin -->
+    </test> <!-- Test on firefox -->
+  </suite> <!-- Suite -->
 </testng-results>
