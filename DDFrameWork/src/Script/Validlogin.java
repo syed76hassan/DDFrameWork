@@ -20,7 +20,5 @@ public class Validlogin extends BaseTest {
 		LoginPage l=new LoginPage(d);
 //		valid login
 		l.login(un, pw);
-		l.verifyerr("Username or Password is invalid. Please try again.");
-		}
-
+	}
 }

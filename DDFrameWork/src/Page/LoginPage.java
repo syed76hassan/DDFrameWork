@@ -8,14 +8,14 @@ import org.testng.Assert;
 
 public class LoginPage {
 	
-	@FindBy(xpath="//input[@id=\"username\"]")
+	@FindBy(xpath="//input[@name='email']")
 	private WebElement untb;
 	
 	
-	@FindBy(xpath="//input[@name='pwd']")
+	@FindBy(xpath="//input[@name='pass']")
 	private WebElement pwtb;
 	
-	@FindBy(xpath="//div[.='Login ']")
+	@FindBy(xpath="//input[@id='u_0_4']")
 	private WebElement loginbtn;
 	
 	@FindBy(xpath="//span[contains(.,'invalid')]")
