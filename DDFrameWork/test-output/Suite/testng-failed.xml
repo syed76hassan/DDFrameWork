@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test on chrome(failed)" parallel="tests">
     <parameter name="ip" value="192.168.43.246"/>
     <parameter name="browser" value="chrome"/>
     <classes>
@@ -13,5 +13,18 @@
         </methods>
       </class> <!-- Script.Validlogin -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test on chrome(failed) -->
+  <test thread-count="5" name="Test on firefox(failed)" parallel="tests">
+    <parameter name="ip" value="192.168.43.246"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Script.Validlogin">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="testvalidlogin"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.Validlogin -->
+    </classes>
+  </test> <!-- Test on firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->

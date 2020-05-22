@@ -15,7 +15,7 @@ public class LoginPage {
 	@FindBy(xpath="//input[@name='pass']")
 	private WebElement pwtb;
 	
-	@FindBy(xpath="//input[@id='u_0_4']")
+	@FindBy(xpath="//input[contains(@type,'submit')]")
 	private WebElement loginbtn;
 	
 	@FindBy(xpath="//span[contains(.,'invalid')]")
