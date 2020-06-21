@@ -1,9 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test verbose="2" name="Default test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
+  <test name="Test">
     <classes>
+      <class name="Script.TC02_ValidateDiscoverDollar_External_links"/>
       <class name="Script.TC08_ValidateDiscoverDollarCareer_page"/>
+      <class name="Script.TC05_ValidateDiscoverDollar_teampage"/>
+      <class name="Script.TC04_ValidateDiscoverDollar_Solutionspage"/>
+      <class name="Script.TC03_ValidateDiscoverDollar_feedback"/>
+      <class name="Script.TC07_ValidateDiscoverDollarContact_page"/>
+      <class name="Script.TC01_Validate_DiscoverDollar_UI"/>
+      <class name="Script.TC06_ValidateDiscoverDollar_News"/>
     </classes>
-  </test> <!-- Default test -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="Script.TC01_Validate_DiscoverDollar_UI">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="ValidateHomepage"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.TC01_Validate_DiscoverDollar_UI -->
+      <class name="Script.TC03_ValidateDiscoverDollar_feedback">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="Validate_Feedbackpage"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.TC03_ValidateDiscoverDollar_feedback -->
+      <class name="Script.TC08_ValidateDiscoverDollarCareer_page">
+        <methods>
+          <include name="validate_CareerPage"/>
+          <include name="CloseApp"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.TC08_ValidateDiscoverDollarCareer_page -->
+      <class name="Script.TC02_ValidateDiscoverDollar_External_links">
+        <methods>
+          <include name="ValidateExternallink"/>
+          <include name="CloseApp"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.TC02_ValidateDiscoverDollar_External_links -->
+      <class name="Script.TC07_ValidateDiscoverDollarContact_page">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="Validate_Contactpage"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.TC07_ValidateDiscoverDollarContact_page -->
+      <class name="Script.TC04_ValidateDiscoverDollar_Solutionspage">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="Validate_Solutionpage"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.TC04_ValidateDiscoverDollar_Solutionspage -->
+      <class name="Script.TC05_ValidateDiscoverDollar_teampage">
+        <methods>
+          <include name="Validate_TeamPage"/>
+          <include name="CloseApp"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.TC05_ValidateDiscoverDollar_teampage -->
+      <class name="Script.TC06_ValidateDiscoverDollar_News">
+        <methods>
+          <include name="CloseApp"/>
+          <include name="Validate_Newspageheader"/>
+          <include name="OpenApp"/>
+        </methods>
+      </class> <!-- Script.TC06_ValidateDiscoverDollar_News -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

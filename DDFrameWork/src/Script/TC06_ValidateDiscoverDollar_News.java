@@ -14,6 +14,6 @@ public class TC06_ValidateDiscoverDollar_News extends BaseTest {
 	@Test
 	public void Validate_Newspageheader() {
           DDNewspage nw=new DDNewspage(driver);
-          nw.Validate_News("News Updates");
+          nw.Validate_News("NEWS UPDATES");
           }
 	}

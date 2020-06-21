@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+  <listeners>
+  <listener class-name="ExtentReportListener.ExtentReporterNG"/>
+  </listeners>
   <test name="Test">
     <classes>
       <class name="Script.TC02_ValidateDiscoverDollar_External_links"/>
+      <class name="Script.TC08_ValidateDiscoverDollarCareer_page"/>
+      <class name="Script.TC05_ValidateDiscoverDollar_teampage"/>
       <class name="Script.TC04_ValidateDiscoverDollar_Solutionspage"/>
       <class name="Script.TC03_ValidateDiscoverDollar_feedback"/>
+      <class name="Script.TC07_ValidateDiscoverDollarContact_page"/>
       <class name="Script.TC01_Validate_DiscoverDollar_UI"/>
+      <class name="Script.TC06_ValidateDiscoverDollar_News"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

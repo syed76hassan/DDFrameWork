@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,8 +37,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\SYED HASSAN\AppData\Local\Temp\testng-eclipse--1130851498\testng-customsuite.xml</span>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Users\SYED HASSAN\git\DDFrameWork\DDFrameWork\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,21 +91,65 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">8 methods, 1 failed,  7 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="Script.TC08_ValidateDiscoverDollarCareer_page" hash-for-method="validate_CareerPage">validate_CareerPage</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Script.TC02_ValidateDiscoverDollar_External_links" hash-for-method="ValidateExternallink">ValidateExternallink</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Script.TC01_Validate_DiscoverDollar_UI" hash-for-method="ValidateHomepage">ValidateHomepage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Script.TC07_ValidateDiscoverDollarContact_page" hash-for-method="Validate_Contactpage">Validate_Contactpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Script.TC03_ValidateDiscoverDollar_feedback" hash-for-method="Validate_Feedbackpage">Validate_Feedbackpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Script.TC06_ValidateDiscoverDollar_News" hash-for-method="Validate_Newspageheader">Validate_Newspageheader</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Script.TC04_ValidateDiscoverDollar_Solutionspage" hash-for-method="Validate_Solutionpage">Validate_Solutionpage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Script.TC05_ValidateDiscoverDollar_teampage" hash-for-method="Validate_TeamPage">Validate_TeamPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Script.TC08_ValidateDiscoverDollarCareer_page" hash-for-method="validate_CareerPage">validate_CareerPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,10 +160,60 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">Script.TC02_ValidateDiscoverDollar_External_links</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateExternallink">
+                  </a> <!-- ValidateExternallink -->
+                  <span class="method-name">ValidateExternallink</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at Page.DDExternal_Links.ValidateLinkedin(DDExternal_Links.java:60)
+	at Script.TC02_ValidateDiscoverDollar_External_links.ValidateExternallink(TC02_ValidateDiscoverDollar_External_links.java:26)
+... Removed 26 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Script.TC01_Validate_DiscoverDollar_UI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidateHomepage">
+                  </a> <!-- ValidateHomepage -->
+                  <span class="method-name">ValidateHomepage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Script.TC03_ValidateDiscoverDollar_feedback</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Validate_Feedbackpage">
+                  </a> <!-- Validate_Feedbackpage -->
+                  <span class="method-name">Validate_Feedbackpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">Script.TC08_ValidateDiscoverDollarCareer_page</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -131,106 +225,402 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Script.TC07_ValidateDiscoverDollarContact_page</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Validate_Contactpage">
+                  </a> <!-- Validate_Contactpage -->
+                  <span class="method-name">Validate_Contactpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Script.TC04_ValidateDiscoverDollar_Solutionspage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Validate_Solutionpage">
+                  </a> <!-- Validate_Solutionpage -->
+                  <span class="method-name">Validate_Solutionpage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Script.TC05_ValidateDiscoverDollar_teampage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Validate_TeamPage">
+                  </a> <!-- Validate_TeamPage -->
+                  <span class="method-name">Validate_TeamPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">Script.TC06_ValidateDiscoverDollar_News</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Validate_Newspageheader">
+                  </a> <!-- Validate_Newspageheader -->
+                  <span class="method-name">Validate_Newspageheader</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\SYED HASSAN\AppData\Local\Temp\testng-eclipse--1130851498\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\SYED HASSAN\git\DDFrameWork\DDFrameWork\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
-  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;ExtentReportListener.ExtentReporterNG&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;Script.TC02_ValidateDiscoverDollar_External_links&quot;/&gt;
       &lt;class name=&quot;Script.TC08_ValidateDiscoverDollarCareer_page&quot;/&gt;
+      &lt;class name=&quot;Script.TC05_ValidateDiscoverDollar_teampage&quot;/&gt;
+      &lt;class name=&quot;Script.TC04_ValidateDiscoverDollar_Solutionspage&quot;/&gt;
+      &lt;class name=&quot;Script.TC03_ValidateDiscoverDollar_feedback&quot;/&gt;
+      &lt;class name=&quot;Script.TC07_ValidateDiscoverDollarContact_page&quot;/&gt;
+      &lt;class name=&quot;Script.TC01_Validate_DiscoverDollar_UI&quot;/&gt;
+      &lt;class name=&quot;Script.TC06_ValidateDiscoverDollar_News&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;test name=&quot;Test(failed)&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Script.TC01_Validate_DiscoverDollar_UI&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;ValidateHomepage&quot;/&gt;
+          &lt;include name=&quot;OpenApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Script.TC01_Validate_DiscoverDollar_UI --&gt;
+      &lt;class name=&quot;Script.TC03_ValidateDiscoverDollar_feedback&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;Validate_Feedbackpage&quot;/&gt;
+          &lt;include name=&quot;OpenApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Script.TC03_ValidateDiscoverDollar_feedback --&gt;
+      &lt;class name=&quot;Script.TC08_ValidateDiscoverDollarCareer_page&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;validate_CareerPage&quot;/&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;OpenApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Script.TC08_ValidateDiscoverDollarCareer_page --&gt;
+      &lt;class name=&quot;Script.TC02_ValidateDiscoverDollar_External_links&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;ValidateExternallink&quot;/&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;OpenApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Script.TC02_ValidateDiscoverDollar_External_links --&gt;
+      &lt;class name=&quot;Script.TC07_ValidateDiscoverDollarContact_page&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;Validate_Contactpage&quot;/&gt;
+          &lt;include name=&quot;OpenApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Script.TC07_ValidateDiscoverDollarContact_page --&gt;
+      &lt;class name=&quot;Script.TC04_ValidateDiscoverDollar_Solutionspage&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;Validate_Solutionpage&quot;/&gt;
+          &lt;include name=&quot;OpenApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Script.TC04_ValidateDiscoverDollar_Solutionspage --&gt;
+      &lt;class name=&quot;Script.TC05_ValidateDiscoverDollar_teampage&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Validate_TeamPage&quot;/&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;OpenApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Script.TC05_ValidateDiscoverDollar_teampage --&gt;
+      &lt;class name=&quot;Script.TC06_ValidateDiscoverDollar_News&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;CloseApp&quot;/&gt;
+          &lt;include name=&quot;Validate_Newspageheader&quot;/&gt;
+          &lt;include name=&quot;OpenApp&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- Script.TC06_ValidateDiscoverDollar_News --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test(failed) --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (8 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Test(failed) (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(8);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validate_CareerPage')
-data.setCell(0, 2, 'Script.TC08_ValidateDiscoverDollarCareer_page')
-data.setCell(0, 3, 4968);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'ValidateExternallink')
+data.setCell(0, 2, 'Script.TC02_ValidateDiscoverDollar_External_links')
+data.setCell(0, 3, 34181);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Validate_Contactpage')
+data.setCell(1, 2, 'Script.TC07_ValidateDiscoverDollarContact_page')
+data.setCell(1, 3, 3);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'ValidateHomepage')
+data.setCell(2, 2, 'Script.TC01_Validate_DiscoverDollar_UI')
+data.setCell(2, 3, 2);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Validate_Solutionpage')
+data.setCell(3, 2, 'Script.TC04_ValidateDiscoverDollar_Solutionspage')
+data.setCell(3, 3, 1);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Validate_TeamPage')
+data.setCell(4, 2, 'Script.TC05_ValidateDiscoverDollar_teampage')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Validate_Newspageheader')
+data.setCell(5, 2, 'Script.TC06_ValidateDiscoverDollar_News')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validate_CareerPage')
+data.setCell(6, 2, 'Script.TC08_ValidateDiscoverDollarCareer_page')
+data.setCell(6, 3, 1);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Validate_Feedbackpage')
+data.setCell(7, 2, 'Script.TC03_ValidateDiscoverDollar_feedback')
+data.setCell(7, 3, 0);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 34 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">ValidateExternallink</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Discover Dollar facebook page displayed</span>
+                <span class="reporter-method-output">Twitter Discover Dollar page Displayed</span>
+                <span class="reporter-method-output">Discover Dollar page not found</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Script.TC08_ValidateDiscoverDollarCareer_page</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Script.TC02_ValidateDiscoverDollar_External_links</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">OpenApp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validate_CareerPage</span>
-                <span class="method-start">28585 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ValidateExternallink</span>
+                <span class="method-start">60017 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">CloseApp([TestResult name=validate_CareerPage status=SUCCESS method=TC08_ValidateDiscoverDollarCareer_page.va...)</span>
-                <span class="method-start">33555 ms</span>
+                <span class="method-name">CloseApp([TestResult name=ValidateExternallink status=FAILURE method=TC02_ValidateDiscoverDollar_External_lin...)</span>
+                <span class="method-start">94203 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Script.TC08_ValidateDiscoverDollarCareer_page</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OpenApp</span>
+                <span class="method-start">101798 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validate_CareerPage</span>
+                <span class="method-start">174101 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CloseApp([TestResult name=validate_CareerPage status=SKIP method=TC08_ValidateDiscoverDollarCareer_page.valid...)</span>
+                <span class="method-start">174105 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Script.TC05_ValidateDiscoverDollar_teampage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OpenApp</span>
+                <span class="method-start">174115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Validate_TeamPage</span>
+                <span class="method-start">331250 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CloseApp([TestResult name=Validate_TeamPage status=SKIP method=TC05_ValidateDiscoverDollar_teampage.Validate_...)</span>
+                <span class="method-start">331252 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Script.TC04_ValidateDiscoverDollar_Solutionspage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OpenApp</span>
+                <span class="method-start">331257 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Validate_Solutionpage</span>
+                <span class="method-start">476652 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CloseApp([TestResult name=Validate_Solutionpage status=SKIP method=TC04_ValidateDiscoverDollar_Solutionspage....)</span>
+                <span class="method-start">476654 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Script.TC03_ValidateDiscoverDollar_feedback</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OpenApp</span>
+                <span class="method-start">476660 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Validate_Feedbackpage</span>
+                <span class="method-start">615731 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CloseApp([TestResult name=Validate_Feedbackpage status=SKIP method=TC03_ValidateDiscoverDollar_feedback.Valid...)</span>
+                <span class="method-start">615737 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Script.TC07_ValidateDiscoverDollarContact_page</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">OpenApp</span>
+                <span class="method-start">1092689 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Validate_Contactpage</span>
+                <span class="method-start">1117538 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseApp([TestResult name=Validate_Contactpage status=SKIP method=TC07_ValidateDiscoverDollarContact_page.Val...)</span>
+                <span class="method-start">1117545 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Script.TC01_Validate_DiscoverDollar_UI</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">OpenApp</span>
+                <span class="method-start">1124317 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ValidateHomepage</span>
+                <span class="method-start">1141068 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">CloseApp([TestResult name=ValidateHomepage status=SKIP method=TC01_Validate_DiscoverDollar_UI.ValidateHomepag...)</span>
+                <span class="method-start">1141073 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Script.TC06_ValidateDiscoverDollar_News</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">OpenApp</span>
+                <span class="method-start">1142058 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">Validate_Newspageheader</span>
+                <span class="method-start">1152400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CloseApp([TestResult name=Validate_Newspageheader status=SKIP method=TC06_ValidateDiscoverDollar_News.Validat...)</span>
+                <span class="method-start">1152402 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

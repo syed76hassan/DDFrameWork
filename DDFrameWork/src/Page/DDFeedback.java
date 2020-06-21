@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 public class DDFeedback {
 
@@ -47,9 +48,17 @@ public class DDFeedback {
 //    	select the ratings
     	like.click();
     	
+    	
+    	
 //    	enter the feedback
     	Msgbox.sendKeys(msg);
     	
+    	if(sendbtn.isEnabled()) {
+    		Reporter.log("send button enabled",true);
+    	}
+    	else {
+    		Reporter.log("send button disabled",true);
+    	}
 //  click on send button
     	sendbtn.click();
     	

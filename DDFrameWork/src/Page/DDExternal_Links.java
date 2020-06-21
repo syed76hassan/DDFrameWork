@@ -57,6 +57,7 @@ public class DDExternal_Links {
 		linkedinlink.click();
 		
 		Reporter.log("Discover Dollar page not found",true);
+		Assert.fail();
 		
 	}
 		
