@@ -18,31 +18,21 @@ import org.testng.annotations.Parameters;
 import com.beust.jcommander.Parameter;
 
 public class BaseTest implements IAutoConst {
-	public WebDriver d;
+	public WebDriver driver;
 	static {
 		System.setProperty(CHROME_KEY, CHROME_VALUE);
 		System.setProperty(GECKO_KEY, GECKO_VALUE);
 	}
 	
 	@BeforeMethod(alwaysRun=true)
-	@Parameters({"ip","browser"})
-	public void OpenApp(String ip,String browser) {
+	public void OpenApp() {
 		String url = AutoUtil.GetProperty(CONFIG_PATH, "url");
 		String ito = AutoUtil.GetProperty(CONFIG_PATH, "ito");
-		
 		long ito1 = Long.parseLong(ito);
-		try {
-			URL url1=new URL("http://"+ip+":4444/wd/hub");
-			DesiredCapabilities dc=new DesiredCapabilities();
-			dc.setBrowserName(browser);
-			dc.setPlatform(Platform.WINDOWS);
-			d=new RemoteWebDriver(url1,dc) ;
-		} catch (Exception e) {
-		}
-		
-		d.get(url);
-		d.manage().timeouts().implicitlyWait(ito1, TimeUnit.SECONDS);
-		
+		driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get(url);
+		driver.manage().timeouts().implicitlyWait(ito1, TimeUnit.SECONDS);
 	}
 	@AfterMethod(alwaysRun=true)
 	public void CloseApp(ITestResult test) {
@@ -53,9 +43,9 @@ public class BaseTest implements IAutoConst {
 		}
 		else {
 			Reporter.log(name+ " is failed ",true);
-			AutoUtil.GetPhoto(d, IMG_PATH,name);
+			AutoUtil.GetPhoto(driver, IMG_PATH,name);
 		}
-		d.close();
+    	driver.close();
 	}
 
 }

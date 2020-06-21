@@ -1,103 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[abcd 1234.0]]>
-    </line>
-    <line>
-      <![CDATA[testvalidlogin is passed ]]>
-    </line>
-    <line>
-      <![CDATA[abcd 1234.0]]>
-    </line>
-    <line>
-      <![CDATA[testvalidlogin is passed ]]>
+      <![CDATA[validate_CareerPage is passed ]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="52245" started-at="2020-05-22T10:25:44Z" finished-at="2020-05-22T10:26:37Z">
+  <suite name="Default suite" duration-ms="34015" started-at="2020-06-21T07:25:58Z" finished-at="2020-06-21T07:26:32Z">
     <groups>
     </groups>
-    <test name="Test on chrome" duration-ms="25482" started-at="2020-05-22T10:25:44Z" finished-at="2020-05-22T10:26:10Z">
-      <class name="Script.Validlogin">
-        <test-method status="PASS" signature="OpenApp(java.lang.String, java.lang.String)[pri:0, instance:Script.Validlogin@589838eb]" name="OpenApp" is-config="true" duration-ms="18586" started-at="2020-05-22T10:25:44Z" finished-at="2020-05-22T10:26:03Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[192.168.43.246]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="34015" started-at="2020-06-21T07:25:58Z" finished-at="2020-06-21T07:26:32Z">
+      <class name="Script.TC08_ValidateDiscoverDollarCareer_page">
+        <test-method status="PASS" signature="OpenApp()[pri:0, instance:Script.TC08_ValidateDiscoverDollarCareer_page@1b0375b3]" name="OpenApp" is-config="true" duration-ms="28585" started-at="2020-06-21T12:55:58Z" finished-at="2020-06-21T12:56:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApp -->
-        <test-method status="PASS" signature="testvalidlogin()[pri:0, instance:Script.Validlogin@589838eb]" name="testvalidlogin" duration-ms="4113" started-at="2020-05-22T10:26:03Z" finished-at="2020-05-22T10:26:07Z">
+        <test-method status="PASS" signature="validate_CareerPage()[pri:0, instance:Script.TC08_ValidateDiscoverDollarCareer_page@1b0375b3]" name="validate_CareerPage" duration-ms="4968" started-at="2020-06-21T12:56:27Z" finished-at="2020-06-21T12:56:32Z">
           <reporter-output>
-            <line>
-              <![CDATA[abcd 1234.0]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testvalidlogin -->
-        <test-method status="PASS" signature="CloseApp(org.testng.ITestResult)[pri:0, instance:Script.Validlogin@589838eb]" name="CloseApp" is-config="true" duration-ms="2747" started-at="2020-05-22T10:26:07Z" finished-at="2020-05-22T10:26:10Z">
+        </test-method> <!-- validate_CareerPage -->
+        <test-method status="PASS" signature="CloseApp(org.testng.ITestResult)[pri:0, instance:Script.TC08_ValidateDiscoverDollarCareer_page@1b0375b3]" name="CloseApp" is-config="true" duration-ms="440" started-at="2020-06-21T12:56:32Z" finished-at="2020-06-21T12:56:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testvalidlogin status=SUCCESS method=Validlogin.testvalidlogin()[pri:0, instance:Script.Validlogin@589838eb] output=abcd 1234.0]]]>
+                <![CDATA[[TestResult name=validate_CareerPage status=SUCCESS method=TC08_ValidateDiscoverDollarCareer_page.validate_CareerPage()[pri:0, instance:Script.TC08_ValidateDiscoverDollarCareer_page@1b0375b3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[testvalidlogin is passed ]]>
+              <![CDATA[validate_CareerPage is passed ]]>
             </line>
           </reporter-output>
         </test-method> <!-- CloseApp -->
-      </class> <!-- Script.Validlogin -->
-    </test> <!-- Test on chrome -->
-    <test name="Test on firefox" duration-ms="52244" started-at="2020-05-22T10:25:44Z" finished-at="2020-05-22T10:26:37Z">
-      <class name="Script.Validlogin">
-        <test-method status="PASS" signature="OpenApp(java.lang.String, java.lang.String)[pri:0, instance:Script.Validlogin@29ca901e]" name="OpenApp" is-config="true" duration-ms="36871" started-at="2020-05-22T10:25:44Z" finished-at="2020-05-22T10:26:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[192.168.43.246]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- OpenApp -->
-        <test-method status="PASS" signature="testvalidlogin()[pri:0, instance:Script.Validlogin@29ca901e]" name="testvalidlogin" duration-ms="8232" started-at="2020-05-22T10:26:21Z" finished-at="2020-05-22T10:26:29Z">
-          <reporter-output>
-            <line>
-              <![CDATA[abcd 1234.0]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testvalidlogin -->
-        <test-method status="PASS" signature="CloseApp(org.testng.ITestResult)[pri:0, instance:Script.Validlogin@29ca901e]" name="CloseApp" is-config="true" duration-ms="7109" started-at="2020-05-22T10:26:29Z" finished-at="2020-05-22T10:26:37Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=testvalidlogin status=SUCCESS method=Validlogin.testvalidlogin()[pri:0, instance:Script.Validlogin@29ca901e] output=abcd 1234.0]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[testvalidlogin is passed ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- CloseApp -->
-      </class> <!-- Script.Validlogin -->
-    </test> <!-- Test on firefox -->
-  </suite> <!-- Suite -->
+      </class> <!-- Script.TC08_ValidateDiscoverDollarCareer_page -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests">
-<listeners>
-<listener class-name="ExtentReportListener.ExtentReporterNG"/>
-</listeners>
-  <test name="Test on chrome" >
-<parameter name="ip" value="192.168.43.246"/>
-<parameter name="browser" value="chrome"/>
-<packages>
-<package name="Script"/>
-</packages>
+<suite name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="Script.TC02_ValidateDiscoverDollar_External_links"/>
+      <class name="Script.TC04_ValidateDiscoverDollar_Solutionspage"/>
+      <class name="Script.TC03_ValidateDiscoverDollar_feedback"/>
+      <class name="Script.TC01_Validate_DiscoverDollar_UI"/>
+    </classes>
   </test> <!-- Test -->
-  <test name="Test on firefox" >
-<parameter name="ip" value="192.168.43.246"/>
-<parameter name="browser" value="firefox"/>
-<packages>
-<package name="Script"/>
-</packages>
-  </test>
 </suite> <!-- Suite -->
